@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do </title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- app wrapper -->
+    <main class="app">
+        <!-- greeting-->
+        <section class="greeting">
+            <h2 class="title">
+                <br><b>
+                HEYY! WHAT'S UP?
+                <input type="text" id="name" placeholder="Type your name here."/>
+            </b></h2>
+        </section>
+        <!-- End of greeting -->
+        <!-- New todo -->
+        <section class="create-todo">
+
+            <h3>CREATE A TODO</h3>
+            <form id="new-todo-form">
+            <h4>What's on your mind today?</h4>
+            <br>
+            <input type="text" placeholder="eg. Get some eggs" name="content" id="content" />
+        
+        <h2>Pick a category:</h2>
+        <div class="options">
+            <label>
+                <input type="radio" name="category" id="category1" value="professional" />
+                <span class="bubble professional"></span>
+                <div><b>Professional</b></div>
+            </label>
+            <label>
+                <input type="radio" name="category" id="category2" value="'personal" />
+                <span class="bubble personal"></span>
+                <div><b>Personal</b></div>
+            </label>
+        </div>
+        
+        <input type="submit" value="Add your task" />
+        </form>
+        </section>
+        <!-- end of new todo -->
+        <!-- todo list -->
+        <section class="todo-list">
+            <h4><i>TODO LIST:</i></h4>
+
+            <div class="list" id="todo-list"></div>
+        </section>
+        <!-- end of todo-->
+    </main>
+    <!-- end of app wrapper  -->
+
+    <!--JS import  -->
+    <script src="main2.js"></script>
+    <!-- end of js import -->
+
+</body>
+
+</html>
